@@ -14,7 +14,8 @@
 
 
 
-SOWFAdir=/opt/OpenFOAM/SOWFA
+SOWFAdir=$HOME/OpenFOAM/SOWFA_polimi
 
 # Do the recursive copy that symbolically links the files to the source.
-cp -rs  $SOWFAdir $WM_PROJECT_USER_DIR
+mkdir $WM_PROJECT_USER_DIR/SOWFA/
+cp -rs  $SOWFAdir/* $WM_PROJECT_USER_DIR/SOWFA/
